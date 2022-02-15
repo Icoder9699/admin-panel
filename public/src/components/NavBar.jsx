@@ -34,7 +34,7 @@ export default function NavBar() {
             mode="vertical"
             defaultSelectedKeys={['1']}
             defaultOpenKeys={['sub1']}
-            mode="inline"
+            // mode="inline"
             // theme="dark"
             inlineCollapsed={collapsed}
          >

@@ -1,5 +1,7 @@
 import React from 'react'
-import { Form, Input, Button, Checkbox, Row, Col } from 'antd';
+
+import { Form, Input, Button, Row, Col } from 'antd';
+import ImageUpload from '../../components/ImageUpload';
 
 export default function create() {
    const onFinish = (values) => {
@@ -35,6 +37,13 @@ export default function create() {
                   <Input />
                </Form.Item>
 
+               <Form.Item
+                  label="Изображение товара"
+                  name="image"
+                  rules={[{required: true, message: 'Пожалуйсто добавьте изображение!'}]}
+               >
+                  <ImageUpload />
+               </Form.Item>
 
                <Form.Item>
                   <Button type="primary" htmlType="submit">
